@@ -1,0 +1,4 @@
+# Detects repeated TCP connections from a single source IP
+index=main sourcetype=XmlWinEventLog* EventID=3
+| stats count by SourceIp DestinationPort
+| where count > 1
