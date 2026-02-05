@@ -7,4 +7,11 @@ The architecture includes:
 - Windows endpoint with Sysmon and Splunk Universal Forwarder
 - Splunk Enterprise SIEM on Ubuntu
 
-A visual diagram will be added in a future update.
+[Kali Linux]
+      |
+      v
+[Windows Server + Sysmon + UF]
+      |
+      v
+[Splunk Enterprise (Ubuntu)]
+
