@@ -1,1 +1,8 @@
-
+index=main sourcetype=XmlWinEventLog* Computer="*PI9*" EventID=3
+| eval DestinationPort=tostring(DestinationPort)
+| where isnotnull(DestinationPort)
+| stats dc(DestinationPort) as unique_ports
+        values(DestinationPort) as ports
+        count as connections
+        by SourceIp
+| where unique_ports >= 2
