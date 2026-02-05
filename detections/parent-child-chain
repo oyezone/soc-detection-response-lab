@@ -1,1 +1,8 @@
-
+index=main sourcetype=XmlWinEventLog* Computer="*PI9*" EventID=1
+Image="*\\powershell.exe"
+| where like(ParentImage,"%\\cmd.exe")
+   OR like(ParentImage,"%\\wscript.exe")
+   OR like(ParentImage,"%\\cscript.exe")
+   OR like(ParentImage,"%\\winword.exe")
+   OR like(ParentImage,"%\\excel.exe")
+| table _time User ParentImage Image CommandLine
