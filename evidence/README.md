@@ -12,7 +12,7 @@ Detection of suspicious multi-port network activity indicative of reconnaissance
 **detection3-abnormal-powershell.png** -
 Abnormal PowerShell execution detected based on non-standard parent process and execution context (Sysmon Event ID 1).
 
-**detection4-powershell-abuse.png**
+**detection4-powershell-abuse.png** -
 PowerShell abuse identified using suspicious command-line flags such as -nop, -w hidden, and encoded commands.
 
 **detection5-parent-child-chain.png** -
