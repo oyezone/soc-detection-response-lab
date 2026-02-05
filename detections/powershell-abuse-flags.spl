@@ -1,1 +1,7 @@
-
+index=main sourcetype=XmlWinEventLog* Computer="*PI9*" EventID=1
+Image="*\\powershell.exe"
+| where like(CommandLine,"% -nop%")
+   OR like(CommandLine,"% -w hidden%")
+   OR like(CommandLine,"% -enc%")
+| where NOT like(ParentImage,"%\\explorer.exe")
+| table _time User ParentImage Image CommandLine
