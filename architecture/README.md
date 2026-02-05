@@ -15,3 +15,6 @@ The architecture includes:
       v
 [Splunk Enterprise (Ubuntu)]
 
+
+## Architecture
+![Architecture Diagram](architecture/architecture-diagram.png)
