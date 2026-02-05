@@ -63,10 +63,12 @@ soc-detection-response-lab/
 │   ├── powershell-abuse-flags.spl
 │   └── suspicious-parent-child-chain.spl
 ├── evidence/
-│   ├── detection2-multiport-recon.png
-│   ├── detection3-abnormal-powershell.png
-│   ├── detection4-powershell-abuse.png
-│   └── detection5-parent-child-chain.png
+│   evidence/
+├── alert-fired.png
+├── detection2-multiport-recon.png
+├── detection3-abnormal-powershell.png
+├── detection4-powershell-abuse.png
+└── detection5-parent-child-chain.png
 └── incident-report/
     └── incident-report.md
 ```
